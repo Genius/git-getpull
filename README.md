@@ -35,6 +35,13 @@ $ git getpull 42a3817c
 https://github.com/rails/rails/pull/11195
 ```
 
+## NB
+
+This isn't a perfect tool - if a commit was made directly to master or a pull request was
+merged via `git rebase`, it will likely print a random pull request. (since the script uses
+a simple `git log --ancestry-path` command to check for pull requests)  Most of the time, however, it
+"does the right thing."
+
 ## LICENSE
 
 Copyright (c) 2013 Andrew Warner
