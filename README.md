@@ -9,21 +9,19 @@ Commit history is hard to maintain! In an ideal world, `git blame` would provide
 
 When a commit message doesn't provide much context, it's useful to be able to look at the GitHub pull request that merged that commit. Pull requests can contain code review comments, discussion over implementation details, before/after pictures of the UI, and more. Pull requests may also have *many* commits associated with them, which together give a clearer sense of the intended change.
 
-This utility allows you to find out which pull request merged a commit into master (assuming the commit came
-from a pull request—if it didn't, you're SOL!).
+This utility allows you to find out which pull request merged a commit into master (assuming the commit came from a pull request—if it didn't, you're SOL!).
 
 ## Installation
 
 (Replace `/usr/local/bin` with a location on your path if `/usr/local/bin` is not on your `$PATH`.)
 
 ```shell
-$ \curl -o /usr/local/bin/git-getpull https://raw.github.com/a-warner/git-getpull/master/git-getpull && chmod +x /usr/local/bin/git-getpull
+$ curl -o /usr/local/bin/git-getpull https://raw.github.com/a-warner/git-getpull/master/git-getpull && chmod +x /usr/local/bin/git-getpull
 ```
 
 ## Usage
 
 ```shell
-andrew@andrew-mba:/opt/workspace/rails(master)
 $ git getpull 42a3817c
 https://github.com/rails/rails/pull/11195
 ```
