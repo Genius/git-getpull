@@ -5,9 +5,9 @@ Quickly find the GitHub pull request that merged your commit to master.
 
 ## Motivation
 
-Commit history is hard to maintain! In an ideal world, `git blame` would provide all of the context that you need to determine why some code was written. Unfortunately, the reality is that no team is perfectly disciplined, and sometimes you're going to run across commits with cryptic or ambiguous messages ("bugfix," anyone?).
+Ideally `git blame` would give you all the context you need to determine why some code was written. But the reality is that no team is perfectly disciplined, and sometimes you're going to run across commits with cryptic or ambiguous messages ("bugfix," anyone?).
 
-When a commit message doesn't provide much context, it's useful to be able to look at the GitHub pull request that merged that commit. Pull requests can contain code review comments, discussion over implementation details, before/after pictures of the UI, and more. Pull requests may also have *many* commits associated with them, which together give a clearer sense of the intended change.
+When a git commit message doesn't provide enough context, or provides context at the wrong level (too much *what*, too little *why*), it's useful to be able to find the GitHub pull request that merged that commit. Pull requests can contain code review comments, discussion over implementation details, before/after pictures of the UI, and more. Pull requests may also have *many* commits associated with them, which together give a clearer sense of the intended change.
 
 This utility allows you to find out which pull request merged a commit into master (assuming the commit came from a pull request—if it didn't, you're SOL!).
 
@@ -32,7 +32,7 @@ This isn't a perfect tool: if a commit was made directly to master or a pull req
 
 ## LICENSE
 
-Copyright (c) 2013 Rap Genius
+Copyright (c) 2014 Rap Genius
 
 MIT License
 
