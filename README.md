@@ -16,7 +16,7 @@ This utility allows you to find out which pull request merged a commit into mast
 (Replace `/usr/local/bin` with a location on your path if `/usr/local/bin` is not on your `$PATH`.)
 
 ```shell
-$ curl -o /usr/local/bin/git-getpull https://raw.github.com/a-warner/git-getpull/master/git-getpull && chmod +x /usr/local/bin/git-getpull
+$ curl -o /usr/local/bin/git-getpull https://raw.githubusercontent.com/Genius/git-getpull/master/git-getpull && chmod +x /usr/local/bin/git-getpull
 ```
 
 ## Usage
